@@ -3,105 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flux - Burundi News</title>
+    <title>Burundi News - Connexion</title>
     <style>
         body { 
-            background-color: #f0f2f5; 
-            margin: 0; 
-            font-family: 'Helvetica', sans-serif; 
-        }
-        header { 
-            background: #CE1126; 
-            color: white; 
-            padding: 15px; 
-            text-align: center; 
-            font-weight: bold; 
-            font-size: 20px; 
-            border-bottom: 4px solid #1EB53A; 
-            position: sticky; 
-            top: 0; 
-        }
-        .container { 
-            max-width: 550px; 
-            margin: 20px auto; 
-            padding: 0 15px; 
+           font-family: 'Arial',sans-serif; 
+           background-color: #f4f4f4; 
+           display: flex; 
+           justify-content: center; 
+           align-items: center; 
+           height: 100vh; 
+           margin: 0; 
         
         }
-        .post { 
+        .card { 
             background: white; 
-            border-radius: 12px; 
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
-            margin-bottom: 20px; 
-            overflow: hidden; 
+            padding: 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+            width: 350px; 
+            text-align: center; 
+            border-top: 6px solid #CE1126; 
         
         }
-        .post-header { 
-            padding: 15px; 
-            display: flex; 
-            align-items: center; 
-            border-bottom: 1px solid #f0f0f0; 
-        }
-        .avatar { 
-            width: 40px; 
-            height: 40px; 
-            background: #1EB53A; 
-            border-radius: 50%; 
-            margin-right: 12px;
+        .logo { 
+            font-size: 26px; 
+            font-weight: bold; 
+            color: #1EB53A; 
+            margin-bottom: 5px;
          }
-        .author { 
-            font-weight: bold; 
-            color: #333; 
-        }
-        .post-content { 
-            padding: 20px; 
-            color: #444; 
-            line-height: 1.5; 
-        }
-        .post-footer { 
-            display: flex; 
-            border-top: 1px solid #f0f0f0; 
-            background: #fafafa; 
-        }
-        .action { 
-            flex: 1; 
-            text-align: center; 
-            padding: 12px; 
-            color: #666; 
-            cursor: pointer; 
+        .subtitle { 
+            color: #CE1126; 
             font-size: 14px; 
-            transition: 0.2s; 
+            margin-bottom: 30px; 
+            letter-spacing: 2px; 
         }
-        .action:hover { 
-            color: #CE1126; 
-            background: #f0f0f0; 
+        input { 
+            width: 100%;
+             padding: 12px; 
+            margin: 10px 0; 
+            border: 1px solid #ddd; 
+            border-radius: 10px; 
+            box-sizing: border-box; 
+            outline: none; 
         }
-        .admin-action { 
-            color: #CE1126; 
+        button { 
+            width: 100%; 
+            padding: 12px; 
+            background: #1EB53A; 
+            color: white; 
+            border: none; 
+            border-radius: 10px; 
             font-weight: bold; 
+            cursor: pointer; 
+            margin-top: 10px; 
+        
+        }
+        .link { 
+            font-size: 12px; 
+            color: #666; 
+            margin-top: 20px; 
         }
     </style>
 </head>
 <body>
-    <header>BURUNDI NEWS </header>
-    <div class="container">
-        <div class="post">
-            <div class="post-header"><div class="avatar"></div><div class="author">Jean-Marie N.</div></div>
-            <div class="post-content">Le Burundi est un pays magnifique avec des paysages incroyables. Voici une mise à jour sur les projets de développement à Bujumbura.</div>
-            <div class="post-footer">
-                <div class="action">J'aime</div>
-                <div class="action">Commenter (3)</div>
-                <div class="action admin-action">Supprimer</div>
-            </div>
-        </div>
-        <div class="post">
-            <div class="post-header"><div class="avatar"></div><div class="author">Admin News</div></div>
-            <div class="post-content">Célébration de la fête nationale : les préparatifs avancent bien dans toutes les provinces du pays.</div>
-            <div class="post-footer">
-                <div class="action">J'aime</div>
-                <div class="action">Commenter (0)</div>
-                <div class="action admin-action">Supprimer</div>
-            </div>
-        </div>
+    <div class="card">
+        <div class="logo">BURUNDI NEWS</div>
+        <div class="subtitle">Kaze - Bienvenue</div>
+        <input type="text" placeholder="Nom d'utilisateur">
+        <input type="password" placeholder="Mot de passe">
+        <a href="flux.html"><button>SE CONNECTER</button></a>
+        <div class="link">Mot de passe oublié ? | Créer un compte</div>
     </div>
 </body>
 </html>
+   
