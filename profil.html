@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Profil - Burundi News</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: #f0f2f5;
+            margin: 0; 
+            }
+        .header-bg { 
+            background: #CE1126; 
+            height: 150px; 
+            border-bottom: 5px solid #1EB53A;
+         }
+        .profile-container { 
+            max-width: 600px; 
+            margin: -50px auto 20px; 
+            padding: 0 15px; }
+        .profile-card { 
+            background: white; 
+            border-radius: 15px; 
+            padding: 20px; 
+            text-align: center; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+         }
+        .avatar-large {
+             width: 100px;
+             height: 100px; 
+             background: #ddd; 
+             border: 5px solid white; 
+             border-radius: 50%; 
+             margin: 0 auto 10px; 
+             display: flex; 
+             align-items: center; 
+             justify-content: center; 
+             font-size: 40px; 
+            }
+        .user-name { 
+            font-size: 22px; 
+            font-weight: bold; 
+            color: #333; 
+        }
+        .user-role { color: #1EB53A; 
+            font-weight: bold; 
+            margin-bottom: 20px; 
+        }
+        .stats { display: flex; 
+            justify-content: space-around; 
+            border-top: 1px solid #eee; 
+            padding-top: 20px; 
+        }
+        .stat-item b { 
+            display: block; 
+            font-size: 18px; 
+            color: #CE1126; 
+        }
+        .btn-edit { 
+            background: #eee; 
+            border: none; 
+            padding: 10px 20px; 
+            border-radius: 8px; 
+            margin-top: 20px; 
+            cursor: pointer; 
+            width: 100%; 
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+    <div class="header-bg"></div>
+    <div class="profile-container">
+        <div class="profile-card">
+            <div class="avatar-large"></div>
+            <div class="user-name">Abdoul Karim</div>
+            <div class="user-role">Administrateur News</div>
+            
+            <div class="stats">
+                <div class="stat-item"><b>12</b> Articles</div>
+                <div class="stat-item"><b>45</b> Commentaires</div>
+            </div>
+
+            <button class="btn-edit">Modifier mon profil</button>
+            <button class="btn-edit" style="color: #CE1126;">Déconnexion</button>
+        </div>
+    </div>
+</body>
+</html>

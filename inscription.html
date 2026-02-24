@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Détails</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif; 
+        margin: 0; 
+        padding: 20px; 
+        background: white; 
+        color: #333; 
+    }
+        .btn-back { 
+            display: inline-block; 
+            color: #CE1126; 
+            text-decoration: none; 
+            margin-bottom: 20px; 
+            font-weight: bold; 
+        }
+
+        .main-article { 
+            border-left: 6px 
+            solid #1EB53A; 
+            padding-left: 20px; 
+            margin-bottom: 40px; 
+        }
+        h1 { 
+            color: #222; 
+            margin-top: 0; 
+        }
+        .comment-section { 
+            background: #f9f9f9; 
+            padding: 20px; 
+            border-radius: 15px; 
+        }
+        .comment { 
+            background: white; 
+            padding: 15px; 
+            border-radius: 10px; 
+            margin-bottom: 10px; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
+        }
+        .comment strong { color: #1EB53A; }
+        textarea { 
+            width: 100%; 
+            height: 80px; 
+            padding: 10px; 
+            border-radius: 10px; 
+            border: 1px solid #ddd; 
+            margin-top: 20px; 
+            box-sizing: border-box; }
+        .btn-send { 
+            background: #CE1126; 
+            color: white; 
+            border: none; 
+            padding: 10px 25px; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            margin-top: 10px; 
+            font-weight: bold; 
+            float: right; 
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="btn-back"> Retour au flux</a>
+    <div class="main-article">
+        <h1>Développement au Burundi</h1>
+        <p> viva communication.</p>
+    </div>
+
+    <div class="comment-section">
+        <h3>Commentaires</h3>
+        <div class="comment"><strong>Alice M.</strong>: Très fier de notre pays !</div>
+        <div class="comment"><strong>Marc O.</strong>: Merci pour ces informations.</div>
+        <textarea placeholder="Exprimez-vous ici..."></textarea>
+        <button class="btn-send">PUBLIER</button>
+        <div style="clear:both;"></div>
+    </div>
+</body>
+</html>
